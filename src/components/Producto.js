@@ -17,7 +17,7 @@ const Producto = ({producto}) => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const editarProducto=(producto)=>{
+    const redireccionarEditarProducto=(producto)=>{
         dispatch(obtenerProductoEditarAction(producto))
         navigate(`/productos/editar/${producto.id}`)
     }
@@ -55,7 +55,7 @@ const Producto = ({producto}) => {
 
             <td className="acciones"> 
                 <button 
-                    onClick={()=>editarProducto(producto)}
+                    onClick={()=>redireccionarEditarProducto(producto)}
                     className="btn btn-primary mr-2"
                     type="button"
                     >Editar</button>

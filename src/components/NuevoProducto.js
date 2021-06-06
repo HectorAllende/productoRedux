@@ -16,9 +16,9 @@ const NuevoProducto = () => {
 
     const cargando = useSelector((state)=>state.productos.loading)
 
-    console.log(cargando)
+    // console.log(cargando)
     const error = useSelector((state)=>state.productos.error)
-    console.log(error)
+    // console.log(error)
 
     const submitNuevoProducto=e=>{
         e.preventDefault()
